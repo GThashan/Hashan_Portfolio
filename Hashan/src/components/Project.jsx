@@ -11,8 +11,7 @@ export default function Project() {
             <div className='p-6 bg-slate-300 rounded-lg my-4'>
                <a href='https://009-shop-client.vercel.app/'><img src={project1} alt="" /></a> 
             </div>
-            <div className='p-6 bg-slate-300 rounded-lg'>
-                
+            <div className='p-6 bg-slate-300 rounded-lg my-4'>
                 <a href='https://user-management-system-client-six.vercel.app/'><img src={project3} alt="" /></a> 
             </div>
             <div className='p-6 bg-slate-300 rounded-lg'>
