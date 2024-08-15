@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { FaHome, FaInfoCircle, FaCogs, FaBriefcase, FaEnvelope } from 'react-icons/fa'; 
+import { Link } from 'react-router-dom';
 
 function Navbar() {
  const [isOpen, setIsOpen] = useState(false);
 
  return (
-   <nav className="flex items-center justify-between flex-wrap p-6 bg-white shadow-lg mx-4 mt-4 rounded-lg fixed w-full top-0">
+   <nav className="flex items-center justify-between flex-wrap p-6 bg-white shadow-lg mx-4 mt-4 rounded-lg ">
      <div className="flex items-center flex-shrink-0  mr-6 lg:mr-72">
       <h1 className='font-bold text-[20px]'>My Resume</h1>
      </div>
@@ -35,26 +36,43 @@ function Navbar() {
      >
        <div className="text-sm lg:flex-grow">
        
-       <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg '>
+      <Link to="/">
+      <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg '>
             <FaHome className="inline-block mr-2" /> 
             Home
           </p>
-          <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
+        </Link> 
+        <Link to="/about">
+        <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
             <FaInfoCircle className="inline-block mr-2" /> 
             About
           </p>
-          <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
+
+        </Link>
+        <Link to="service">
+        <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
             <FaCogs className="inline-block mr-2" /> 
             Service
           </p>
+
+        </Link>
+          
+          <Link to="work">
           <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
             <FaBriefcase className="inline-block mr-2" /> 
             Works
           </p>
-          <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
+
+          </Link>
+         
+         <Link to="contact">
+         <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
             <FaEnvelope className="inline-block mr-2" /> 
             Contact
           </p>
+
+         </Link>
+          
          
        </div>
        <div>
