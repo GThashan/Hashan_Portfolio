@@ -17,12 +17,7 @@ function Details() {
         user-friendly interfaces. I am continually expanding my knowledge and
         skills, aiming to build innovative and efficient software solutions
       </p>
-      <div className="text-left">
-      <h1 className="font-bold text-[30px] my-4">
-        Education
-      </h1>
-      <p>BSc. Honours Degree in Software Engineering in University of Sabaragamuwa</p>
-      </div>
+      
     </div>
   );
 }

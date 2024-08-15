@@ -6,7 +6,7 @@ function Navbar() {
  const [isOpen, setIsOpen] = useState(false);
 
  return (
-   <nav className="flex items-center justify-between flex-wrap p-6 bg-white shadow-lg mx-4 mt-4 rounded-lg ">
+   <nav className="flex items-center justify-between flex-wrap p-4 bg-white shadow-lg mx-4  rounded-lg">
      <div className="flex items-center flex-shrink-0  mr-6 lg:mr-72">
       <h1 className='font-bold text-[20px]'>My Resume</h1>
      </div>
@@ -49,7 +49,7 @@ function Navbar() {
           </p>
 
         </Link>
-        <Link to="service">
+        <Link to="/service">
         <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
             <FaCogs className="inline-block mr-2" /> 
             Service
@@ -57,7 +57,7 @@ function Navbar() {
 
         </Link>
           
-          <Link to="work">
+          <Link to="/work">
           <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
             <FaBriefcase className="inline-block mr-2" /> 
             Works
@@ -65,7 +65,7 @@ function Navbar() {
 
           </Link>
          
-         <Link to="contact">
+         <Link to="/contact">
          <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg'>
             <FaEnvelope className="inline-block mr-2" /> 
             Contact
@@ -76,9 +76,11 @@ function Navbar() {
          
        </div>
        <div>
-         <button className="inline-flex items-center bg-slate-900 hover:bg-[#5588ff] border-0 py-2 px-4 text-white font-bold rounded-lg">
+      <Link to='/contact'>
+      <button className="inline-flex items-center bg-slate-900 hover:bg-[#5588ff] border-0 py-2 px-4 text-white font-bold rounded-lg">
            Let's Talk
          </button>
+        </Link>   
        </div>
      </div>
    </nav>

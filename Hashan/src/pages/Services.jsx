@@ -10,9 +10,13 @@ function Services() {
   return (
     <div>
         <Navbar/>
+        <div className='lg:grid lg:grid-cols-3'>
         <Profiile/>
         <Service/>
         <Skill/>
+
+        </div>
+        
         <Talk/>
         <Footer/>
       

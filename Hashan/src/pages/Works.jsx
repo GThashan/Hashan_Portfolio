@@ -9,8 +9,11 @@ function Works() {
   return (
     <div>
         <Navbar/>
+        <div className='lg:grid lg:grid-cols-2'>
         <Profiile/>
         <Project/>
+        </div>
+        
         <Talk/>
      <Footer/>
       

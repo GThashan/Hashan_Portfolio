@@ -9,8 +9,11 @@ function Contact() {
   return (
     <div>
         <Navbar/>
+        <div className='lg:grid lg:grid-cols-2'>
         <Profiile/>
         <Form/>
+        </div>
+        
         <Talk/>
         <Footer/>
 

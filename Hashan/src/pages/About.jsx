@@ -10,9 +10,14 @@ function About() {
   return (
     <div>
         <Navbar/>
+        <div className='lg:grid lg:grid-cols-3'>
         <Profiile/>
         <Details/>
         <Info/>
+
+        </div>
+      
+        
      
         <Talk/>
         <Footer/>

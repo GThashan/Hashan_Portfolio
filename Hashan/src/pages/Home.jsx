@@ -11,11 +11,19 @@ function Home() {
   return (
     <div>
         <Navbar/>
+        <div className='lg:grid lg:grid-cols-3'>
         <Profiile/>
-        <Skill/>
-        <Project/>
         <Service/>
+        <Project/>
+        </div>
+       
+     <div className='lg:grid lg:grid-cols-2'>
+     
+     <Skill/>
         <Talk/>
+
+     </div>
+       
         <Footer/>
       
     </div>
