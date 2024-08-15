@@ -5,7 +5,7 @@ function Navbar() {
  const [isOpen, setIsOpen] = useState(false);
 
  return (
-   <nav className="flex items-center justify-between flex-wrap p-6 bg-white shadow-lg mx-4 mt-4 rounded-lg">
+   <nav className="flex items-center justify-between flex-wrap p-6 bg-white shadow-lg mx-4 mt-4 rounded-lg fixed w-full top-0">
      <div className="flex items-center flex-shrink-0  mr-6 lg:mr-72">
       <h1 className='font-bold text-[20px]'>My Resume</h1>
      </div>

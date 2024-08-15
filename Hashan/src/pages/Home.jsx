@@ -4,6 +4,8 @@ import Profiile from '../components/Profiile'
 import Skill from '../components/Skill'
 import Project from '../components/Project'
 import Service from '../components/Service'
+import Talk from '../components/Talk'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -13,6 +15,8 @@ function Home() {
         <Skill/>
         <Project/>
         <Service/>
+        <Talk/>
+        <Footer/>
       
     </div>
   )
