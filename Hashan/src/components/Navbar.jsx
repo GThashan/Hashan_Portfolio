@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHome, FaInfoCircle, FaCogs, FaBriefcase, FaEnvelope } from 'react-icons/fa'; 
+import { FaHome, FaInfoCircle, FaCogs, FaBriefcase, FaEnvelope,FaDownload } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -8,7 +8,9 @@ function Navbar() {
  return (
    <nav className="flex items-center justify-between flex-wrap p-4 bg-white shadow-lg mx-4  rounded-lg">
      <div className="flex items-center flex-shrink-0  mr-6 lg:mr-72">
-      <h1 className='font-bold text-[20px]'>My Resume</h1>
+      <h1 className='font-bold text-[20px]'>
+        Resume
+      </h1>
      </div>
      <div className="block lg:hidden">
        <button
@@ -16,14 +18,14 @@ function Navbar() {
          className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
        >
          <svg
-           className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
+           className={`fill-current h-4 w-4  ${isOpen ? "hidden" : "block"}`}
            viewBox="0 0 20 20"
            xmlns="http://www.w3.org/2000/svg"
          >
            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
          </svg>
          <svg
-           className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
+           className={`fill-current h-4 w-4 ${isOpen ? "block" : "hidden"}`}
            viewBox="0 0 20 20"
            xmlns="http://www.w3.org/2000/svg"
          >
@@ -37,7 +39,7 @@ function Navbar() {
        <div className="text-sm lg:flex-grow">
        
       <Link to="/">
-      <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg '>
+      <p className='block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg  '>
             <FaHome className="inline-block mr-2" /> 
             Home
           </p>
