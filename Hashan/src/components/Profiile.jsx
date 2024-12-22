@@ -5,7 +5,8 @@ import {  FaGithub, FaLinkedin, FaEnvelopeOpenText } from 'react-icons/fa';
 
 export default function Profiile() {
   return (
-    <div className='bg-white mx-4 mt-10 p-3 shadow-lg rounded-lg'>
+    <div className='bg-[#0f172a] mx-4 mt-4 p-6 shadow-lg rounded-lg text-white'>
+     
         <div>
             <img src={Logo} alt=""  className="rounded-lg"/>
             <h1 className='font-bold text-[20px] my-4'> Hashan Gamage 👋</h1>

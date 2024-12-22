@@ -11,7 +11,7 @@ function Home() {
   return (
     <div>
         <Navbar/>
-        <div className='lg:grid lg:grid-cols-3'>
+        <div className='lg:grid lg:grid-cols-3 items-start'>
         <Profiile/>
         <Service/>
         <Project/>

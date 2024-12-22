@@ -4,10 +4,10 @@ import { SiMongodb, SiAdobe } from 'react-icons/si';
 
 export default function Skill() {
   return (
-    <div className='bg-white mx-4 mt-4 p-4 shadow-lg rounded-lg'>
-        <h1 className='font-bold text-[20px]'>My Skills</h1>
+    <div className='bg-[#0f172a] mx-4 mt-4 p-4 shadow-lg rounded-lg '>
+        <h1 className='font-bold text-[20px] text-white'>My Skills</h1>
 
-        <div className='grid grid-cols-2 gap-4 mt-4 lg:grid lg:grid-cols-4'>
+        <div className='grid grid-cols-2 gap-4 mt-4 lg:grid lg:grid-cols-2'>
         <div className="flex items-center flex-col bg-slate-200 p-3 rounded-lg">
         <FaJs className="mr-2 text-yellow-500 " size={24} />
         <p>JavaScript</p>

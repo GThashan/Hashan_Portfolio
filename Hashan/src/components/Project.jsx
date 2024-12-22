@@ -5,26 +5,31 @@ import project4 from '../assets/Project4.png'
 
 export default function Project() {
   return (
-    <div className='bg-white mx-4 mt-3 p-3 shadow-lg rounded-lg'>
-         <h1 className='font-bold text-[20px]'>Recent Project</h1>
+    <div className='bg-[#0f172a] mx-4 mt-3 p-10 shadow-lg rounded-lg '>
+         <h1 className='font-bold text-[20px] text-white '>Recent Project</h1>
         
          <div className='lg:grid lg:grid-cols-2 gap-2'>
-            <div className='p-6 bg-slate-300 rounded-lg my-4'>
-               <a href='https://009-shop-client.vercel.app/'><img src={project1} alt="" /></a> 
+            <div className='p-6 bg-slate-300 rounded-lg '>
+               <img src={project1} alt="" />
+               <div className='flex flex-gap-2'>
+                   <div>React js</div>
+                   <div>React js</div>
+                   <div>React js</div>
+                   <div>React js</div>
+               </div>
             </div>
-            <div className='p-6 bg-slate-300 rounded-lg my-4'>
-                <a href='https://user-management-system-client-six.vercel.app/'><img src={project3} alt="" /></a> 
+            <div className='p-6 bg-slate-300 rounded-lg '>
+               <img src={project3} alt="" />
             </div>
-            <div className='p-6 bg-slate-300 rounded-lg my-4'>
-            <a href='https://book-nest-client.vercel.app/'><img src={project4} alt="" /></a> 
-            
+            <div className='p-6 bg-slate-300 rounded-lg '>
+            <img src={project4} alt="" />
             </div>
-            <div className='p-6 bg-slate-300 rounded-lg my-4'>
-               <a href='https://009-shop-client.vercel.app/'><img src={project1} alt="" /></a> 
+            <div className='p-6 bg-slate-300 rounded-lg'>
+              <img src={project1} alt="" />
             </div>
         
          </div>
-         <button className='p-3 text-white bg-[#5588ff] text-center items-center rounded-lg'>See more</button>
+        
 
       
     </div>
