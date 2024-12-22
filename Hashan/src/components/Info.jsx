@@ -2,7 +2,7 @@ import React from 'react'
 
 function Info() {
   return (
-    <div className='bg-white mx-4 mt-4 p-4 shadow-lg rounded-lg'>
+    <div className='bg-[#0f172a] text-white mx-4 mt-4 p-4 shadow-lg rounded-lg'>
       <div className="text-left">
       <h1 className="font-bold text-[30px] my-4">
         Education

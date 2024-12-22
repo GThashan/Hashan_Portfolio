@@ -2,11 +2,11 @@ import React from "react";
 
 function Details() {
   return (
-    <div className="bg-white mx-4 mt-4 p-4 shadow-lg rounded-lg">
-      <h1 className="font-bold text-[30px]">
+    <div className="bg-[#0f172a] mx-4 mt-4 p-4 shadow-lg rounded-lg">
+      <h1 className="font-bold text-[30px] text-white">
         Hi 👋 I am <span className="text-[#5588ff]">Hashan Gamage </span>
       </h1>
-      <p>
+      <p className="text-white">
         I am a passionate Software Engineering student with a focus on both web
         and app development. My expertise includes the MERN stack (MongoDB,
         Express.js, React, Node.js), Next.js, HTML, CSS, JavaScript, and some
