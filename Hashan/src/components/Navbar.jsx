@@ -52,27 +52,27 @@ function Navbar() {
             </p>
           </Link>
           <Link to="/about">
-            <p className="text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg">
+            <p className="text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-black p-3 rounded-lg">
               <FaInfoCircle className="inline-block mr-2" />
               About
             </p>
           </Link>
           <Link to="/service">
-            <p className=" text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg">
+            <p className=" text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-black p-3 rounded-lg">
               <FaCogs className="inline-block mr-2" />
               Service
             </p>
           </Link>
 
           <Link to="/work">
-            <p className="text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg">
+            <p className="text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-black p-3 rounded-lg">
               <FaBriefcase className="inline-block mr-2" />
               Works
             </p>
           </Link>
 
           <Link to="/contact">
-            <p className="text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-[#eaf2f8] p-3 rounded-lg">
+            <p className="text-white block mt-4 lg:inline-block lg:mt-0 text-gray-700 text-[20px] mr-6 font-bold cursor-pointer hover:bg-black p-3 rounded-lg">
               <FaEnvelope className="inline-block mr-2" />
               Contact
             </p>
@@ -80,7 +80,7 @@ function Navbar() {
         </div>
         <div>
           <Link to="/contact">
-            <button className="inline-flex items-center bg-slate-900 hover:bg-[#5588ff] border-0 py-2 px-4 text-white font-bold rounded-lg">
+            <button className="inline-flex items-center bg-black hover:bg-[#5588ff] border-0 py-2 px-4 text-white font-bold rounded-lg">
               Let's Talk
             </button>
           </Link>
