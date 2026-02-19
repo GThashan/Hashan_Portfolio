@@ -5,6 +5,7 @@ import Talk from '../components/Talk'
 import Footer from '../components/Footer'
 import Service from '../components/Service'
 import Skill from '../components/Skill'
+import Project from '../components/Project'
 
 function Services() {
   return (
@@ -13,10 +14,10 @@ function Services() {
         <div className='lg:grid lg:grid-cols-3'>
         <Profiile/>
         <Service/>
-        <Skill/>
+        <Project/>
 
         </div>
-        
+        <Skill/>
         <Talk/>
         <Footer/>
       
