@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import cv from "../assets/l.png";
+import cv from "../assets/12.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ function Navbar() {
 
       {/* Logo */}
       <div className="flex items-center">
-        <img src={cv} alt="logo" className="rounded-lg w-10 h-10" />
+        <img src={cv} alt="logo" className="rounded-lg w-20 h-25" />
       </div>
 
       {/* Mobile Button */}
