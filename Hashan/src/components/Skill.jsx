@@ -28,7 +28,7 @@ export default function SkillsSection() {
   return (
     <div className="bg-[#0f172a] min-h-screen text-white flex items-center justify-center mx-4 mt-4 shadow-lg rounded-lg">
        {/* <div className='bg-[#0f172a]  mx-4 mt-4 p-4 shadow-lg rounded-lg flex items-center justify-center'></div> */}
-      <div className="relative w-full max-w-6xl ">
+      <div className="relative w-full max-w-6xl p-4">
 
         {/* Left Vertical Skills Text */}
         <div className="absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 text-2xl font-bold text-gray-400 tracking-widest">
