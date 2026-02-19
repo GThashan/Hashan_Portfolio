@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/logo.jpg'
+import Logo from '../assets/profile.jpg'
 import {  FaGithub, FaLinkedin, FaEnvelopeOpenText } from 'react-icons/fa';
 
 
