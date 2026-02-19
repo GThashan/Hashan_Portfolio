@@ -20,14 +20,14 @@ function Navbar() {
           className="text-yellow-400 focus:outline-none"
         >
           <svg
-            className={`h-6 w-6 ${isOpen ? "hidden" : "block"}`}
+            className={`h-4 w-4 ${isOpen ? "hidden" : "block"}`}
             fill="currentColor"
             viewBox="0 0 20 20"
           >
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
           <svg
-            className={`h-6 w-6 ${isOpen ? "block" : "hidden"}`}
+            className={`h-4 w-4 ${isOpen ? "block" : "hidden"}`}
             fill="currentColor"
             viewBox="0 0 20 20"
           >
