@@ -17,7 +17,7 @@ function Home() {
         <Project/>
         </div>
        
-     <div className='lg:grid lg:grid-cols-2'>
+     <div>
      
      <Skill/>
         <Talk/>

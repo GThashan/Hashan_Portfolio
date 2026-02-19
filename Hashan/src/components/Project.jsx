@@ -4,35 +4,66 @@ import p2 from "../assets/p2r.png";
 
 export default function Project() {
   return (
-    <div className="bg-[#0f172a] mx-4 mt-3 p-6 shadow-lg rounded-lg">
-      <h1 className="underline font-bold text-[25px] text-white text-center">
-        Recent Project
-      </h1>
+    <div className="bg-[#0f172a] mx-4 mt-6 p-8 shadow-lg rounded-xl text-white">
 
-      <div className="lg:grid gap-2 mt-8">
-        <div className="border-b bg-slate-300 rounded-lg shadow-lg w-50 h-40 flex items-center justify-center">
-          <img src={p1} alt="" className="w-full h-full object-cover rounded" />
-        </div>
-        <div className="border-b bg-slate-300 rounded-lg shadow-lg w-50 h-40 flex items-center justify-center">
-          <img src={p2} alt="" className="w-full h-full object-cover rounded" />
-        </div>
+      {/* Header */}
+      <div className="text-center mb-10">
+        <h1 className="text-3xl font-bold mb-2">Recent Projects</h1>
+        <p className="text-gray-400">
+          A selection of projects I’ve worked on recently
+        </p>
       </div>
 
-      
-      <div className="flex justify-center mt-6">
-        <svg
-          className="animate-bounce w-6 h-6 text-white border-2 rounded-full"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 3a1 1 0 011 1v12.586l3.293-3.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L11 16.586V4a1 1 0 011-1z"
-            clipRule="evenodd"
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        {/* Project Card */}
+        <div className="group relative overflow-hidden rounded-xl border border-slate-800">
+          <img
+            src={p1}
+            alt="Project 1"
+            className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
           />
-        </svg>
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center text-center p-4">
+            <h2 className="text-lg font-semibold mb-2">Project One</h2>
+            <p className="text-sm text-gray-300 mb-4">
+              MERN stack web application with modern UI
+            </p>
+            <button className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition">
+              View Project
+            </button>
+          </div>
+        </div>
+
+        <div className="group relative overflow-hidden rounded-xl border border-slate-800">
+          <img
+            src={p2}
+            alt="Project 2"
+            className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+
+          <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col items-center justify-center text-center p-4">
+            <h2 className="text-lg font-semibold mb-2">Project Two</h2>
+            <p className="text-sm text-gray-300 mb-4">
+              Responsive mobile-first application
+            </p>
+            <button className="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-600 transition">
+              View Project
+            </button>
+          </div>
+        </div>
+
       </div>
+
+      {/* Scroll Indicator */}
+      <div className="flex justify-center mt-10">
+        <div className="animate-bounce w-10 h-10 flex items-center justify-center border border-slate-600 rounded-full text-gray-300">
+          ↓
+        </div>
+      </div>
+
     </div>
   );
 }

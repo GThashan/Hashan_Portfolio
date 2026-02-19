@@ -1,34 +1,72 @@
-import React from 'react'
+import React from 'react';
 
 function Form() {
   return (
-    <div className='bg-[#0f172a] text-white mx-4 mt-4 p-4 shadow-lg rounded-lg'>
-       <h1 className='font-bold text-[30px]'>Contact Form</h1>
-       <form action="">
-        <div className='flex flex-col w-full my-3'>
-        <label htmlFor="" className='text-[20px] my-2'>Name</label>
-        <input type="text" placeholder='Enter your name'  className='outline-none p-3 bg-slate-200 rounded-lg'/>
+    <div className="bg-[#0f172a] text-white mx-4 mt-6 p-8 shadow-xl rounded-xl max-w-2xl mx-auto">
+
+      {/* Header */}
+      <h1 className="text-3xl font-bold text-center mb-6">Contact Me</h1>
+      <p className="text-center text-gray-400 mb-8">
+        Have a project or idea in mind? Feel free to reach out, I’d love to collaborate!
+      </p>
+
+      <form className="space-y-6">
+
+        {/* Name */}
+        <div className="flex flex-col">
+          <label htmlFor="name" className="text-lg mb-2">Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            className="p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white transition"
+          />
         </div>
 
-        <div className='flex flex-col w-full my-3'>
-        <label htmlFor="" className='text-[20px] my-2'>Email</label>
-        <input type="text" placeholder='Enter your email'  className='outline-none p-3 bg-slate-200 rounded-lg'/>
+        {/* Email */}
+        <div className="flex flex-col">
+          <label htmlFor="email" className="text-lg mb-2">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            className="p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white transition"
+          />
         </div>
 
-        <div className='flex flex-col w-full my-3'>
-        <label htmlFor="" className='text-[20px] my-2'>Phone Number</label>
-        <input type="text" placeholder='Enter your number'  className='outline-none p-3 bg-slate-200 rounded-lg'/>
+        {/* Phone */}
+        <div className="flex flex-col">
+          <label htmlFor="phone" className="text-lg mb-2">Phone Number</label>
+          <input
+            id="phone"
+            type="text"
+            placeholder="Enter your phone number"
+            className="p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white transition"
+          />
         </div>
 
-        <div className='flex flex-col w-full my-3'>
-        <label htmlFor="" className='text-[20px] my-2'>Message</label>
-        <textarea  placeholder='Enter your number'  className='outline-none p-3 bg-slate-200 rounded-lg'/>
+        {/* Message */}
+        <div className="flex flex-col">
+          <label htmlFor="message" className="text-lg mb-2">Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Write your message..."
+            className="p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-white transition resize-none"
+          ></textarea>
         </div>
-        <button className='bg-[#5588ff] p-4 my-2 w-full text-white font-bold hover:bg-slate-800 rounded-lg'>Send</button>
-       
-       </form>
+
+        {/* Submit */}
+        <button
+          type="submit"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          Send Message
+        </button>
+
+      </form>
     </div>
-  )
+  );
 }
 
-export default Form
+export default Form;
