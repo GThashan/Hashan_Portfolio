@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Merriweather', 'serif'], // Set Merriweather as the serif font
+          sans: ['Roboto', 'sans-serif'],
       },
       colors: {
         pageBg: '#172032',
